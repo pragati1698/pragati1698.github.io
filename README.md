@@ -1,68 +1,253 @@
-# Pragati Kumar — Personal Engineering Portfolio
 
-A responsive, accessible, dependency-free portfolio designed for AI Forward Deployed Engineer (FDE), Applied AI Engineer, and AI/Agent Infrastructure opportunities.
+# Pragati Kumar | Software Engineer — AI Systems & Enterprise Solutions
 
-## What's inside
+I build AI-powered systems that solve real-world problems, from enterprise knowledge assistants and workflow automation to reliable AI-agent execution.
 
-- `index.html` — homepage with selected work, impact metrics, experience, and contact links.
-- `case-studies/agent-hands.html` — source-backed case study for the Agent Hands project.
-- `case-studies/enterprise-ai.html` — **public-safe** summary of enterprise Copilot Studio work (no employer source code, internal links, screenshots, secrets, or dataset exports).
-- `assets/styles.css` — responsive styling; no external packages or font dependencies.
-- `assets/site.js` — mobile menu, scroll progress, and small reveal animations; no tracking scripts.
-- `assets/Pragati_Kumar_Resume.pdf` — portfolio resume; phone number intentionally omitted.
-- `assets/favicon.svg` — SVG favicon.
+My experience spans Python, distributed systems, cloud infrastructure, LLM applications, and enterprise integrations.
 
-## Preview the website
+This portfolio highlights selected engineering projects, technical decisions, measurable outcomes, and my approach to taking AI solutions from business requirements to working systems.
 
-Double-click `index.html`, or start a local preview server:
+**[LinkedIn](https://www.linkedin.com/in/pragatikr) | [GitHub](https://github.com/pragati1698)**
+
+---
+
+## Website Preview
+
+A look at my personal engineering portfolio, showcasing AI systems, enterprise solutions, and reliable agent execution.
+
+<a href="assets/portfolio-preview.png">
+  <img
+    src="assets/portfolio-preview.png"
+    alt="Pragati Kumar — Software Engineering and Applied AI Portfolio"
+    width="700"
+  />
+</a>
+
+---
+
+## Featured Engineering Work
+
+### 1. Agent Hands — Reliable AI Agent Execution
+
+Developed an LLM-assisted computer-use system that separates model-driven workflow discovery from deterministic execution.
+
+The project explores how AI agents can interact with real-world interfaces while maintaining controlled execution, verification, and human oversight.
+
+**Key capabilities:**
+- Model-driven workflow discovery and typed action recording
+- Deterministic workflow replay without additional model calls
+- Code-owned policy enforcement and restricted execution
+- Human takeover with checkpoint verification
+- Structured error handling and sanitized execution evidence
+- Automated testing of supported workflow scenarios
+
+**Technologies:** Python, Playwright, Pydantic, LLM APIs, pytest
+
+**Engineering focus:** AI agents, execution reliability, authorization boundaries, workflow automation, and human-in-the-loop systems.
+
+**[View GitHub Repository](https://github.com/pragati1698/agent-hands)** | [View Case Study Source](case-studies/agent-hands.html)
+
+### 2. Enterprise AI Assistants — Applied AI Delivery
+
+Designed and developed enterprise AI assistants using Microsoft Copilot Studio, integrating organizational knowledge and workflow automation.
+
+The work focuses on connecting AI capabilities with existing enterprise systems while addressing user requirements, accessibility, governance, and deployment considerations.
+
+**Key areas:**
+- Enterprise knowledge integration using SharePoint
+- AI-assisted employee information retrieval
+- Automated request intake and routing
+- Stakeholder requirements and solution architecture
+- Access management and enterprise governance considerations
+- Testing, validation, and deployment preparation
+
+**Technologies:** Microsoft Copilot Studio, SharePoint, Power Automate, Microsoft Power Platform
+
+**Engineering focus:** Enterprise AI integration, stakeholder collaboration, applied AI delivery, and business workflow automation.
+
+**Project status:** Development, testing, and deployment preparation. A completed production rollout is not claimed.
+
+[View Case Study Source](case-studies/enterprise-ai.html)
+
+---
+
+## Engineering Experience & Impact
+
+My engineering experience spans backend development, enterprise automation, distributed test infrastructure, and applied AI.
+
+Selected accomplishments include:
+
+- **Distributed infrastructure:** Designed a Kubernetes-based Selenium execution platform supporting 200 parallel test sessions.
+- **Performance optimization:** Reduced regression execution time from approximately 6 hours to 3 minutes.
+- **Data engineering:** Developed Python-based analysis of 1,000+ survey responses to extract sentiment and recurring themes.
+- **Enterprise automation:** Built integrations and reporting workflows using Python, SQL Server, SharePoint, and Microsoft Power Platform.
+- **Applied AI:** Developed Copilot Studio solutions connecting enterprise knowledge with employee-facing workflows.
+
+These examples reflect previous engineering experience and are separate from the portfolio website itself.
+
+---
+
+## Technology Stack
+
+| Area | Technologies |
+| --- | --- |
+| Programming | Python, Java, JavaScript, TypeScript, SQL |
+| Backend Development | REST APIs, Spring Boot, Spring MVC, Hibernate |
+| AI & Automation | LLM APIs, Copilot Studio, Playwright, Selenium, Power Automate |
+| Cloud & Infrastructure | Azure, AWS, Docker, Kubernetes, CI/CD |
+| Data | SQL Server, PostgreSQL, MySQL, Pandas, Power BI |
+| Engineering Practices | System Design, Testing, Automation, API Integration, Reliability |
+
+---
+
+## Portfolio Website Structure
+
+```text
+.
+├── index.html
+├── README.md
+├── case-studies/
+│   ├── agent-hands.html
+│   └── enterprise-ai.html
+└── assets/
+    ├── styles.css
+    ├── site.js
+    ├── favicon.svg
+    ├── portfolio-preview.png
+    └── Pragati_Kumar_Resume.pdf
+```
+
+**File descriptions:**
+
+- `index.html` — Homepage featuring selected work, technical impact, experience, and contact information.
+- `case-studies/agent-hands.html` — Technical case study covering Agent Hands architecture and implementation.
+- `case-studies/enterprise-ai.html` — Generalized overview of enterprise AI assistant development.
+- `assets/styles.css` — Responsive website styling.
+- `assets/site.js` — Navigation and lightweight interface interactions.
+- `assets/favicon.svg` — Website favicon.
+- `assets/portfolio-preview.png` — Homepage preview for this README.
+- `assets/Pragati_Kumar_Resume.pdf` — Public-facing engineering resume.
+
+---
+
+## Preview Locally
+
+This is a static HTML, CSS, and JavaScript website.
+
+You can open `index.html` directly in your browser.
+
+Alternatively, run a local development server:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit http://localhost:8000.
+Then visit:
 
-No build command, paid hosting, API key, package installation, or `.env` file is required.
+http://localhost:8000
 
-## Publish to GitHub Pages — recommended
+No frontend framework, paid hosting, API key, or application build step is required.
 
-1. Sign into your GitHub account (`pragati1698`). Create a **public** repository named `pragati1698.github.io` for a site at `https://pragati1698.github.io/` (or use an ordinary repo if you prefer a project site).
-2. Put the **contents** of this folder (not the enclosing folder) into the new repository's root and push to `main`.
-3. In GitHub, open **Settings → Pages → Build and deployment**. Choose **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
-4. Wait for GitHub Pages to deploy. Check all navigation, the case studies, and the resume download.
-5. Add the deployed URL to LinkedIn's Featured section and to your GitHub profile README.
+---
 
-You can also publish through **Vercel**: push to a GitHub repo, then import it in Vercel using `Other` or `No Framework` preset, and deploy as a static site. No build command is necessary.
+## Deploy to GitHub Pages
 
-## Edit content before publishing
+### Step 1 — Create a repository
 
-Please **review** all public-facing facts, project descriptions, credential claims, case-study wording, and contact details.
+Create a public GitHub repository named:
 
-| Desired change | Edit |
+`pragati1698.github.io`
+
+This repository name enables a personal GitHub Pages site at:
+
+`https://pragati1698.github.io/`
+
+### Step 2 — Upload the website
+
+Upload the contents of the portfolio folder to the repository root.
+
+Make sure `index.html` is in the root directory.
+
+### Step 3 — Enable GitHub Pages
+
+1. Open the repository on GitHub.
+2. Navigate to **Settings → Pages**.
+3. Under **Build and deployment**, select **Deploy from a branch**.
+4. Choose the `main` branch and `/ (root)` folder.
+5. Click **Save**.
+
+### Step 4 — Verify deployment
+
+Once GitHub Pages finishes deploying, open:
+
+https://pragati1698.github.io/
+
+Verify the homepage, project links, case-study pages, navigation, and resume download.
+
+After deployment is confirmed, add the live portfolio URL near the top of this README and to your LinkedIn Featured section.
+
+### Alternative — Vercel
+
+The website can also be deployed using Vercel.
+
+Connect the GitHub repository, select a static site configuration, and deploy without a build command.
+
+---
+
+## Customize the Portfolio
+
+| What to update | File |
 | --- | --- |
-| Headline, project cards, metrics, email/contact | `index.html` |
-| Technical case study | `case-studies/agent-hands.html` |
-| Enterprise case study / project status | `case-studies/enterprise-ai.html` and `index.html` |
-| Colors, type, spacing | `assets/styles.css` under `:root` |
-| Resume | Replace `assets/Pragati_Kumar_Resume.pdf` (same filename) |
-| Social accounts | Replace `pragati1698`, `pragatikr` in HTML files |
+| Introduction and headline | `index.html` |
+| Featured projects | `index.html` |
+| Technical project descriptions | `case-studies/` |
+| Experience and impact metrics | `index.html` |
+| Colors and typography | `assets/styles.css` |
+| Social and contact links | HTML files |
+| Resume | `assets/Pragati_Kumar_Resume.pdf` |
+| README screenshot | `assets/portfolio-preview.png` |
 
-### Privacy and employer review
+---
 
-- The current HTML publishes the contact email from your existing resume: `pragati.kumar2019@gmail.com`. Replace it if you want a dedicated portfolio email.
-- The public resume deliberately omits your personal phone number.
-- The enterprise case study uses generalized public-safe descriptions and **does not claim a completed production rollout**. Do not add internal documents, private URLs, unapproved screenshots, credentials, sensitive organizational architecture, or exact employee/operational records.
-- Confirm any employer communication/branding policies before publishing an employment-related case study. You can omit the employer name entirely if needed.
-- The 200 parallel session, 6-hour-to-3-minute, and 1,000+ response figures come from your existing resume; confirm you are comfortable publishing them.
+## Privacy & Professional Considerations
 
-## Next upgrades (optional)
+This portfolio is intended to showcase engineering experience without exposing internal organizational information.
 
-- Add your actual Agent Hands demo recording after it is recorded; keep the video on YouTube/Loom or GitHub release assets, then link it from `index.html`.
-- Add a real avatar only if you want one, and use your own authorized photo.
-- Add a new customer-facing deployment project when it is complete and tested.
-- Update the enterprise project status after approval and real end-user validation.
-- Add a custom domain and SEO canonical URL only after publishing. No fabricated site address was hard-coded in metadata.
+- No employer source code, credentials, internal SharePoint URLs, or confidential documents should be published.
+- Enterprise AI work is presented through generalized descriptions.
+- Employer-specific case studies should be reviewed for compliance with applicable communication and disclosure policies.
+- The public resume omits my personal phone number.
+- Impact metrics reflect previously documented experience and should be validated before public use.
+- Project capabilities and deployment status should be updated only after successful implementation and verification.
 
-## Hosting/security notes
+---
 
-The site is entirely static and contains no server-side code, forms, cookies, tracking scripts, or third-party SDKs. The only outbound links are explicit GitHub, LinkedIn, and the user's email `mailto:`. Review the public PDF and the email address before making the repository public.
+## What's Next
+
+My current engineering interests include:
+
+- Reliable AI agents and tool execution
+- AI-powered enterprise workflow integration
+- Secure agent authorization and human oversight
+- Evaluation and monitoring of agent behavior
+- Scalable infrastructure for production AI applications
+- Forward-deployed AI engineering and customer-focused problem solving
+
+Planned portfolio improvements include:
+
+- An Agent Hands demonstration video
+- Additional AI evaluation experiments
+- A deployed customer-facing AI integration project
+- Expanded technical architecture documentation
+- Further reliability and security benchmarking
+
+---
+
+## Connect
+
+I'm interested in opportunities and collaborations involving AI engineering, forward-deployed solutions, backend systems, and secure agent infrastructure.
+
+- **LinkedIn:** https://www.linkedin.com/in/pragatikr
+- **GitHub:** https://github.com/pragati1698
+
+**Building AI systems that move beyond prototypes and solve real-world problems.**
